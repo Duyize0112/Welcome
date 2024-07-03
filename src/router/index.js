@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../Views/HomeView.vue';
 import StudentListView from '../Views/StudentListView.vue';
-
 const routes = [
   {
     path: '/',
@@ -12,6 +11,10 @@ const routes = [
     path: '/students',
     name: 'StudentList',
     component: StudentListView
+  },{
+    path: '/Library',
+    name:'Library',
+    component: () => import('../components/Library.vue')
   }
 ];
 

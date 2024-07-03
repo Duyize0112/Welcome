@@ -15,6 +15,7 @@ export default {
 <style>
 @import './main.css';
 #app {
+  height: auto;
   margin: auto;
   background: #b9e8ff;
   border-radius: 8px;
